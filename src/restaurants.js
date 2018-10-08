@@ -1,8 +1,7 @@
 import fetch from 'isomorphic-fetch';
 
-const getRestaurants = async () => {
-  const res = await fetch('http://localhost:3000/api/restaurants')
-  return res.json();
+const getRestaurants = () => {
+  return fetch('https://billy-server.herokuapp.com/api/restaurants').then( res => res.json());
 }
 
 export default getRestaurants;

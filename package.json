@@ -5,15 +5,14 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "firebase": "firebase",
-    "babel": "babel src -d functions/src && babel index.js -d functions && cp -r public functions/public",
+    "babel": "babel src -d dist/src && babel index.js -d dist && cp -r public dist/public",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.1.2",
-    "firebase-tools": "^5.0.1",
     "express": "^4.16.3",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.5.2",
@@ -30,8 +29,6 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^7.0.0",
     "babel-loader": "^8.0.4",
-    "firebase-admin": "^6.0.0",
-    "firebase-functions": "^2.0.5",
     "webpack": "4.20.2",
     "webpack-cli": "^3.1.2"
   },

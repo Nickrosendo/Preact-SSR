@@ -13,7 +13,7 @@ var _default = function _default(props) {
   var restaurants = props.restaurants.map(function (rest) {
     return _react.default.createElement("li", {
       key: rest._id
-    }, rest.name);
+    }, _react.default.createElement("h1", null, "Titulo"), rest.name);
   });
   return _react.default.createElement("ul", null, restaurants);
 };
